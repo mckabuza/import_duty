@@ -1,0 +1,506 @@
+/*
+    General Styles
+*/
+html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    color: rgba(74, 74, 74, 1.00);
+
+    box-sizing: border-box;
+}
+
+a {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    color: rgba(14, 12, 12 , 1.00);
+=======
+    color: rgba(255, 109, 109, 1.00);
+>>>>>>> de108477fa8b26856e1b2bf3ac6a179240d02268
+
+    font-weight: bold;
+    font-size: 18px;
+}
+.header-img {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: right;
+    top: 18px;
+    left: 10px;
+  }
+/*
+    CALCULATE TEXT
+*/
+a:visited {
+<<<<<<< HEAD
+    color: rgba(7, 7, 7,1.00);
+=======
+    color: rgb(7, 7, 7);
+>>>>>>> 6df604a7476434328ca5090988bcd06b4b6498af
+}
+
+/*
+    Layout
+*/
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+header {
+    flex: 0 1 100%;
+}
+
+#variables {
+    margin-right: 2.5rem;
+}
+
+#variables, #result {
+    flex: 0 1 calc(50% - 1.25rem);
+}
+
+#variables h2, #result h2 {
+    margin-bottom: 1.25rem;
+}
+
+footer {
+    flex: 0 1 100%;
+}
+
+/*
+    Main content wrapper
+*/
+body {
+    margin: 1rem auto;
+    padding: 0 1.5rem 0 1.5rem;
+    background-color:  #ffffff;
+}
+
+/*
+    Header
+*/
+header {
+    border-color: #25a2d39f;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 0 0 0.75rem;
+
+    padding: 0 1.5rem 0 1.5rem;
+
+    margin: 0 0 2rem;
+}
+
+header a,
+header a:visited,
+header a:focus,
+header a:active {
+    color: rgba(74, 74, 74, 1.00);
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    margin: 0 0 -.75rem;
+}
+
+header .tagline {
+    margin: 0 0 0.75rem;
+}
+
+/*
+    Sections
+*/
+section {
+    margin: 0 0 2rem;
+}
+
+section h2 {
+    margin: 0 0 .75rem;
+
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+}
+/*
+    DISCLAIMER
+*/
+section p {
+    max-width: 130ex;
+    color:rgb(15, 15, 15);
+
+}
+
+/*
+    RESULT
+*/
+
+.callout {
+    background: rgba(164, 201, 201, 0.25);
+    border-radius: 5px;
+
+   
+
+    color:rgba(15, 15, 15,1.00);
+
+
+    margin: 0 0 1.25rem;
+    padding: 1rem 1.5rem;
+}
+
+.explanation {
+    margin-bottom: 1rem;
+    color:rgba(15, 15, 15, 1.00);
+}
+
+.details{
+
+  color:rgba(15, 15, 15, 1.00);
+}
+
+
+/*
+    Form labels
+*/
+label {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 0 .5rem;
+    margin: 0 0 1rem;
+
+    border-style: solid;
+    border-width: 0 0 3px;
+    border-color: #25a2d3;
+    
+    color:rgb(27, 29, 28);
+}
+
+.label-text {
+    display: inline-block;
+    margin-top: .5rem;
+    line-height: 1.5rem;
+}
+
+/*
+    Input fields
+*/
+
+input:focus, select:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+
+    height: 2rem;
+    line-height: normal;
+
+    text-align: right;
+    vertical-align: middle;
+    max-width: 45%;
+}
+
+input, select, option, .checkbox-pseudo {
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    }
+
+button{
+
+
+color: rgb(133, 97, 97);
+border-radius: 5px;
+background-color: #006845;
+border-color: rgba(41,117,96);
+font-size: 10px;
+outline: none ;
+}
+/*
+    VARIABLE OPTIONS
+*/
+select, option {
+    background: #61bbbb;
+    border: none;
+    border-radius: 5px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    color: rgba(4, 5, 5, 0.85);
+}
+
+select:focus {
+   
+}
+
+/*
+    Number fields
+*/
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+    Checkboxes
+*/
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+input[type="checkbox"]:checked + .checkbox-pseudo:before {
+    content: "Yes";
+    cursor: pointer;
+}
+
+input[type="checkbox"] + .checkbox-pseudo:before {
+    content: "No";
+    cursor: pointer;
+}
+
+input[type="checkbox"]:focus  + .checkbox-pseudo:before {
+    text-decoration: underline;
+    background: rgba(255, 109, 109, 0.25);
+}
+
+/*
+    Text selection
+*/
+::selection {
+    background: rgba(255, 109, 109, 0.25);
+}
+::-moz-selection {
+    background: rgba(255, 109, 109, 0.25);
+}
+
+/*
+    Footer
+*/
+
+footer {
+    margin: 3rem 0 0 0;
+
+    border-color: rgba(255, 109, 109, 1.00);
+    border-style: solid;
+    border-width: 2px 0 0;
+
+    padding: .25rem 1.5rem .25rem 1.5rem;
+
+    font-size: 1rem;
+}
+
+
+
+/*
+    Responsive Overrides
+*/
+@media (min-width: 740px) {
+    body {
+        width: 900px;
+    }
+
+     #margin{
+
+      display: inline-flex; 
+       margin-left: 100px;
+    }
+    .radio-left{
+      margin-left:100px; 
+      border-style: none;
+    }
+
+    input, select, option, .checkbox-pseudo {
+    font-size: 1.5rem;
+
+   
+    }
+
+     label {
+      font-size: 1.5rem;
+    }
+
+    .callout{
+
+       font-size: 2.1rem;
+    }
+
+    #disclaimer{
+
+    font-size: 15px;
+
+
+}
+
+
+}
+
+@media (max-width: 740px) {
+
+    html {
+        padding: 0 1.5rem;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    body {
+        padding: 0;
+        width: 100%;
+    }
+
+    #variables {
+        margin: 0 0 1.5rem;
+        flex: 0 1 100%;
+        color:white;
+    }
+
+     #result{
+         margin: 0 0 1.5rem;
+        flex: 0 1 100%;
+        color:rgba(15,15,15,1.00);
+
+
+     }
+     #margin{
+        display: inline-flex; 
+        margin-left: 30px;
+    }
+
+    header {
+        padding: 0;
+    }
+    .radio-left{
+      margin-left:50px; 
+      border-style: none;
+    }
+
+    /*Select Product Category and Select Category*/
+    input, select, option, .checkbox-pseudo {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+      text-overflow: clip; 
+  
+ 
+    
+    }
+
+    label {
+      font-size: 1.2rem;
+    }
+
+    .callout{
+
+       font-size: 1.8rem;
+    }
+    #disclaimer{
+
+    font-size: 13px;
+
+
+}
+
+}
+
+
+.box{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50% ,-50%);
+
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:10px;
+  display:inline-block;
+  transition: all .5s;
+}
+/*
+    CALCULATE BUTTON
+*/
+.btn-white{
+  background: #61bbbb;
+  font-size: 15px;
+  color:rgb(14, 12, 12);
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:10px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #fff;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
